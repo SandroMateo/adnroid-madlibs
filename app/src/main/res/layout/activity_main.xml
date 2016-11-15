@@ -5,6 +5,16 @@
     android:layout_height="match_parent"
     tools:context="com.example.guest.madlibs.MainActivity">
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignLeft="@+id/editText"
+        android:src="@drawable/madlibs"
+        android:scaleType="centerCrop"
+        android:layout_alignStart="@+id/editText" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,6 +22,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
         android:textSize="40sp"
         android:id="@+id/textView" />
 
@@ -22,7 +33,9 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:hint="A name" />
+        android:hint="A name"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_light"
+        android:textColorHint="@color/abc_primary_text_disable_only_material_light"  />
 
     <EditText
         android:layout_width="match_parent"
@@ -31,14 +44,20 @@
         android:layout_marginTop="20dp"
         android:layout_below="@+id/editText"
         android:layout_centerHorizontal="true"
-        android:hint="Another name" />
+        android:hint="Another name"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_light"
+        android:textColorHint="@color/abc_primary_text_disable_only_material_light" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
         android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:spinnerMode="dropdown"
+        android:visibility="visible"
+        android:backgroundTint="@color/abc_btn_colored_borderless_text_material" />
 
     <EditText
         android:layout_width="match_parent"
@@ -47,7 +66,9 @@
         android:layout_marginTop="20dp"
         android:layout_below="@+id/spinner"
         android:layout_centerHorizontal="true"
-        android:hint="An exclamation" />
+        android:hint="An exclamation"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_light"
+        android:textColorHint="@color/abc_primary_text_disable_only_material_light" />
 
     <EditText
         android:layout_width="match_parent"
@@ -56,7 +77,9 @@
         android:layout_marginTop="20dp"
         android:layout_below="@+id/editText4"
         android:layout_centerHorizontal="true"
-        android:hint="An past tense verb" />
+        android:hint="A past tense verb"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_light"
+        android:textColorHint="@color/abc_primary_text_disable_only_material_light" />
 
     <EditText
         android:layout_width="match_parent"
@@ -65,7 +88,9 @@
         android:layout_marginTop="20dp"
         android:layout_below="@+id/editText5"
         android:layout_centerHorizontal="true"
-        android:hint="A noun" />
+        android:hint="A noun"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_light"
+        android:textColorHint="@color/abc_primary_text_disable_only_material_light" />
 
     <Button
         android:layout_width="match_parent"
@@ -76,8 +101,5 @@
         android:layout_centerHorizontal="true"
         android:background="@color/colorPrimaryDark"
         android:textColor="@color/abc_primary_text_material_dark" />
-
-
-
 
 </RelativeLayout>
